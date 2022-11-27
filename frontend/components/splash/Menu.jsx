@@ -10,8 +10,8 @@ class Menu extends React.Component {
     render() {
         return (
             <div className="menu-container" onClick={ () => {this.setState({ renderDropdown: !this.state.renderDropdown }) } }>
-                {/* <img src={window.hamburger_icon} id="hamburger-icon"/>
-                <img src={window.blank_user_profile} id="menu-profile-icon"/> */}
+                <img src={window.hamburger_icon} id="hamburger-icon"/>
+                <img src={window.blank_user_profile} id="menu-profile-icon"/>
                     {this.state.renderDropdown ?
                         <DropdownContainer history={history}/>
                         :

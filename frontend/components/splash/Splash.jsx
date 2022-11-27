@@ -20,7 +20,7 @@ class Splash extends React.Component {
 
             <div id='splash-main-pic-container'>
                 Main Pic
-                {/* <img src={window.splash_main_pic} id="splash-main-pic"/> */}
+                <img src={window.splash_main_pic} id="splash-main-pic"/>
             </div>
 
             <SplashFooter />
