@@ -9,6 +9,7 @@
 User.destroy_all
 User.create(first_name: "Demo", last_name: "User", email: "user@demo.com", password: "password")
 
+Listing.destroy_all
 Listing.create({
         title: "Gorgeous Penthouse in Miami",
         description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
@@ -37,7 +38,7 @@ Listing.create({
             aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
             voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         host_id: 1,
-        address: "12000 Biscayne Blvd",
+        address: "12000 Idaho Blvd",
         city: "Idaho City",
         state: "Idaho",
         zipcode: 33132,
