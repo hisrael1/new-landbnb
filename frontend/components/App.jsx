@@ -1,8 +1,8 @@
 import React from "react";
-// import LoginFormContainer from "./session/LoginFormContainer";
-// import SignupFormContainer from "./session/SignupFormContainer";
+import LoginFormContainer from "./session/LoginFormContainer";
+import SignupFormContainer from "./session/SignupFormContainer";
 import { Redirect, Switch, Route } from "react-router-dom";
-// import { AuthRoute } from "../util/route_util";
+import { AuthRoute } from "../util/route_util";
 import Splash from "./splash/Splash";
 // import ListingsContainer from "./listings/ListingsContainer";
 import UserContainer from "./user/UserContainer";
@@ -14,8 +14,8 @@ import UserContainer from "./user/UserContainer";
 
 const App = () => (
     <Switch>
-        {/* <AuthRoute path="/login" component={LoginFormContainer} />
-        <AuthRoute path="/signup" component={SignupFormContainer} /> */}
+        <AuthRoute path="/login" component={LoginFormContainer} />
+        <AuthRoute path="/signup" component={SignupFormContainer} />
         <Route exact path = "/" component={Splash} />
         {/* <Route path = "/listings/:query" component={ListingsContainer} /> */}
         <Route path = "/users/show/" component={UserContainer}/>
